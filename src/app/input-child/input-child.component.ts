@@ -18,6 +18,5 @@ export class InputChildComponent {
   addTask(): void {
     const value = this.inputField!.nativeElement.value;
     this.sendToParent.emit(value);
-    console.log(value);
   }
 }

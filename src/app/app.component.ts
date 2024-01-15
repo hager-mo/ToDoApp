@@ -14,7 +14,10 @@ import { OuputChildComponent } from './ouput-child/ouput-child.component';
 export class AppComponent {
   title = 'ToDoApp';
 
-  receivedFromChiled(task : string){
-    console.log(task);
+  task: any;
+
+  receivedFromChiled(mytask : string): void{
+    console.log(mytask);
+    this.task = mytask;
   }
 }
