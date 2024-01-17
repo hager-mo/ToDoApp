@@ -1,3 +1,4 @@
-<app-input-child (sendToParent)="receivedFromChiled($event)"></app-input-child>
-<app-ouput-child [task]="task"></app-ouput-child>
+<!-- (sendToParent)="receivedFromChiled($event)" -->
+<app-input-child (sended)="receivedFromChiled($event)"></app-input-child>
+<app-ouput-child [taskyyy]="tasks"></app-ouput-child>
 <router-outlet></router-outlet>

@@ -10,13 +10,14 @@
             <!-- (input)="onInputChange($event)" -->
             <!-- (keyup)="onKeyUp($event)"  -->
             <div class="form-floating mb-3 text-bg-light rounded">
-                <input type="text" #inputField class="form-control rounded" id="floatingInput" placeholder="Enter New Task">
+                <input type="text" #task class="form-control rounded" id="floatingInput" placeholder="Enter New Task">
                 <label for="floatingInput">Enter New Task</label>
             </div>
         </div>
     
         <div class="text-end">
-            <button (click)="addTask()" type="button" class="btn btn-danger btn-lg">Add</button>
+            <!-- (click)="addTask()" -->
+            <button  (click)="taskadded(task.value)" type="button" class="btn btn-danger btn-lg">Add</button>
         </div>
     </div>
 </div>

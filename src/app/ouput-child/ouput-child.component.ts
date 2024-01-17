@@ -1,5 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Todo } from '../todo.model';
 
 @Component({
   selector: 'app-ouput-child',
@@ -9,5 +10,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './ouput-child.component.css'
 })
 export class OuputChildComponent {
-  @Input() task : any;
+  @Input() taskyyy : Todo[] = [];
 }

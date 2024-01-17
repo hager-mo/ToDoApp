@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { InputChildComponent } from './input-child/input-child.component';
 import { OuputChildComponent } from './ouput-child/ouput-child.component';
+import { Todo } from './todo.model';
 
 @Component({
   selector: 'app-root',
@@ -14,10 +15,12 @@ import { OuputChildComponent } from './ouput-child/ouput-child.component';
 export class AppComponent {
   title = 'ToDoApp';
 
-  task: any;
+  tasks: Todo[] = [];
 
-  receivedFromChiled(mytask : string): void{
-    console.log(mytask);
-    this.task = mytask;
+  receivedFromChiled(task : any){
+    let obj =  { task : task};
+    this.tasks.push(obj);
+    console.log(task);
+    
   }
 }
